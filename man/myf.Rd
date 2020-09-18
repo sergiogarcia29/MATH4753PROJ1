@@ -10,7 +10,7 @@ myf(x)
 \item{x}{}
 }
 \value{
-a vector of squared components
+a vector of squared components in the form of a vector object
 }
 \description{
 Takes a vector and returns a vector of squared components
