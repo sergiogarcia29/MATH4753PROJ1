@@ -3,6 +3,7 @@
 export(myNRML)
 export(mybin)
 export(myboot)
+export(myci)
 export(mycltu)
 export(myf)
 export(myncurve)
