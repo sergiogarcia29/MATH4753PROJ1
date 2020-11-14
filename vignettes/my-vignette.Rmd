@@ -1,0 +1,101 @@
+---
+title: "MATH4753PROJ1: Sergio's Rpackage"
+output: 
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    math: katex
+    df_print: paged
+    toc: yes
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753PROJ1)
+```
+
+# Introduction
+
+This package is basically a summary of the functions that I considered more interesting or useful during my learning, all of them are
+taken from the laboratories we have done in the course so far.
+
+# R functions
+
+## mybin.R
+
+This function performs a binomial simulation, it has default values of iter=100, p=0.5, and n=10. You will find some extra description pressing
+"F1" after you write down the function to access help.
+
+
+```{r}
+mybin()
+```
+
+## myboot.R
+
+This is a function created to run the bootstrap simulation technique to estimate a confidence interval of a parameter of interest. You will find some extra description pressing "F1" after you write down the function to access help.
+
+```{r}
+s=c(3,4,5,6)
+myboot(x=s)
+```
+
+## myci.R
+
+This is a more basic function, created using R as a calculator, to estimate the interval of the mean of a single sample. You will find some extra description pressing "F1" after you write down the function to access help.
+
+```{r}
+myci(s)
+```
+
+## mycltu.R
+
+This function is based on the central limit theorem, it will sample from an uniform distribution and create a normal approximation for the sample.
+You will find some extra description pressing "F1" after you write down the function to access help.
+
+```{r}
+mycltu(n=4,iter=1000)
+```
+
+## myf.R
+
+This was the function I used to learn how to create functions in my package. it is a simple function that returns a vector of squared components in the form of a vector object. You will find some extra description pressing "F1" after you write down the function to access help.
+
+```{r}
+x=1:30
+myf(x)
+```
+
+## myncurve.R
+
+This function creates a normal distribution curve using the mean and the standard deviation as parameters, and also estimates the lower tail probability of a point of interest. You will find some extra description pressing "F1" after you write down the function to access help.
+
+```{r}
+myncurve(mu=10,sigma=2,p=9)
+```
+
+## myNRML.R
+
+This is the function I liked the most, it runs the Newton Raphson algorithm to estimate the maximum likelihood estimator using the log function of the joint of the data of interest. You will find some extra description pressing "F1" after you write down the function to access help.
+
+```{r}
+myNRML(x0=1,delta=0.000001,llik=function(x) log(dpois(4,x)*dpois(6,x)*dpois(7,x)*dpois(6,x)*dpois(5,x)),xrange=c(0,20),parameter="lambda" )
+```
+
+
+# Conclusion
+
+It was very fun to learn how to use R to work with real life problems and situations. The book has a lot of good examples where the functions included in this package can be used.
+
+Rock n Roll!!
+

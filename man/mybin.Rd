@@ -20,5 +20,5 @@ returns a barplot of relative frequencies and a table of the same
 A binomial simulation
 }
 \examples{
-mybin()
+mybin() -> Runs the simulation with the default parameters
 }

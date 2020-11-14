@@ -9,6 +9,7 @@
 #' @export
 #'
 #' @examples
+#' mycltu(n=4,iter=1000) will give you a histogram of the sample mean, sampling from an uniform distribution with the default values a=0 and b=10
 mycltu=function(n,iter,a=0,b=10){
   ## r-random sample from the uniform
   y=runif(n*iter,a,b)
@@ -38,3 +39,4 @@ mycltu=function(n,iter,a=0,b=10){
   curve(dunif(x,a,b),add=TRUE,lwd=4)
 
 }
+

@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' mybin()
+#' mybin() -> Runs the simulation with the default parameters
 mybin=function(iter=100,n=10, p=0.5){
   # make a matrix to hold the samples
   #initially filled with NA's
@@ -27,3 +27,4 @@ mybin=function(iter=100,n=10, p=0.5){
   barplot(succ.tab/(iter), col=rainbow(n+1), main="Binomial simulation", xlab="Number of successes")
   succ.tab/iter
 }
+

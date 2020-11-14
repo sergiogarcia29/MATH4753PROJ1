@@ -21,3 +21,6 @@ returns a histogram of the sample distribution, and its theorical density curve 
 \description{
 Central limit function for the uniform distribution
 }
+\examples{
+mycltu(n=4,iter=1000) will give you a histogram of the sample mean, sampling from an uniform distribution with the default values a=0 and b=10
+}

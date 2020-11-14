@@ -14,12 +14,13 @@ myboot(iter = 10000, x, fun = "mean", alpha = 0.05, ...)
 \item{fun}{function for the bootstrap intervals (ex mean, variance, etc)}
 
 \item{alpha}{alpha level (1-alpha is equal to the confidence interval)}
-
-\item{...}{}
 }
 \value{
-
+Returns a histogram of the sample statistic which also shows the confidence interval for the mean at the established 1-alpha confidence level
 }
 \description{
 My boot function (bootstrap simulation technique)
+}
+\examples{
+For a basic sample s=c(3,4,5,6) use myboot(x=s) and you will get a 95\% confidence interval for the mean
 }

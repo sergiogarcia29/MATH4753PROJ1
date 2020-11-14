@@ -1,16 +1,15 @@
-
-#' My boot function (bootstrap simulation technique)
+#' @title My boot function (bootstrap simulation technique)
 #'
 #' @param iter Number of iterations of the simulation
 #' @param x population sample
 #' @param fun function for the bootstrap intervals (ex mean, variance, etc)
 #' @param alpha alpha level (1-alpha is equal to the confidence interval)
-#' @param ...
 #'
-#' @return
+#' @return Returns a histogram of the sample statistic which also shows the confidence interval for the mean at the established 1-alpha confidence level
 #' @export
 #'
 #' @examples
+#' For a basic sample s=c(3,4,5,6) use myboot(x=s) and you will get a 95% confidence interval for the mean
 myboot<-function(iter=10000,x,fun="mean",alpha=0.05,...){
 
   #Notice where the ... is repeated in the code
@@ -46,3 +45,4 @@ myboot<-function(iter=10000,x,fun="mean",alpha=0.05,...){
   return(list(ci=ci,fun=fun,x=x))# Some output to use if necessary
 
 }
+

@@ -9,13 +9,16 @@ myci(x, ci = 0.95, ...)
 \arguments{
 \item{x}{sample}
 
-\item{ci}{desired confidence interval}
+\item{ci}{desired confidence level of the interval}
 
 \item{...}{}
 }
 \value{
-returns a range of the desired confidence interval
+returns a range of the desired confidence interval for the mean of a single sample
 }
 \description{
 myci function (Confidence interval for the mean of a single sample)
+}
+\examples{
+For a single sample s=c(3,4,5,6) use myci(s) to get a confidence interval of the mean at the default confidence level of 95\%
 }

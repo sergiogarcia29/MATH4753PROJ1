@@ -23,3 +23,7 @@ returns a graph of the loglik function and a graph of the netwon raphson algorit
 \description{
 myNRML (My newton raphson maximum likelihood)
 }
+\examples{
+myNRML(x0=1,delta=0.000001,llik=function(x) log(dpois(4,x)*dpois(6,x)*dpois(7,x)*dpois(6,x)*dpois(5,x)),xrange=c(0,20),parameter="lambda" )
+Will give you the point estimator of the parameter lambda of a random sample y=4,6,7,6,5 which has a poisson distribution
+}

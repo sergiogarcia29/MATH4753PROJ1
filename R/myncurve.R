@@ -7,7 +7,8 @@
 #' @return returns a graph of the distribution and the area of the lower tail probability, also gives you the lower tail probability
 #' @export
 #'
-#' @examples
+#' @examples\
+#' myncurve(mu=10,sigma=2,p=9) will give you a graph of the normal for the given mu and sigma, and the area of the lower tail probability of p<=9. It will also give you the value of the area, which is equal to the probability.
 myncurve = function(mu, sigma, p){
   ### Draw a normal curve
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma))
