@@ -99,3 +99,5 @@ It was very fun to learn how to use R to work with real life problems and situat
 
 Rock n Roll!!
 
+This is the address of my github repository: https://github.com/sergiogarcia29/MATH4753PROJ1.git
+
